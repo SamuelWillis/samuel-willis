@@ -1,0 +1,32 @@
+{
+  "name": "samuel-willis",
+  "version": "1.0.0",
+  "description": "Personal site for Samuel Willis.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "lint": "./node_modules/.bin/eslint server.js",
+    "serve": "NODE_ENV=dev nodemon --watch client/ --exec heroku local",
+    "build": "cd client && rm -rf dist  && npm run build",
+    "deploy": "git push heroku master"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SamuelWillis/samuel-willis.git"
+  },
+  "author": "Samuel Willis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SamuelWillis/samuel-willis/issues"
+  },
+  "homepage": "https://github.com/SamuelWillis/samuel-willis#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.14.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "nodemon": "^1.18.10"
+  }
+}
