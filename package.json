@@ -8,7 +8,6 @@
     "lint": "./node_modules/.bin/eslint server.js",
     "serve": "NODE_ENV=dev nodemon --watch client/ --exec heroku local",
     "build": "rm -rf public/ client/dist/ && cd client && npm run build && cd .. && mv client/dist public",
-    "postinstall": "npm run build",
     "deploy": "git push heroku master"
   },
   "repository": {
