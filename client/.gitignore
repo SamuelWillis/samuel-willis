@@ -1,9 +1,6 @@
 .DS_Store
 node_modules
-
-# Ignoring this for now as I would like to test deploys to heroku.
-# Ideally I wouldn't have to do that.
-# /dist
+/dist
 
 # local env files
 .env.local
