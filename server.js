@@ -5,9 +5,6 @@ const port = process.env.PORT || 6969;
 
 const app = express();
 
-
-app.get('/', (req, res) => res.send('hey'));
-
 // Serve Vue App
 app.get('*', (req, res) => {
   res.sendFile(path.join(`${__dirname}/client/dist/index.html`));
