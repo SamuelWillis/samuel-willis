@@ -10,24 +10,26 @@
         exact>
         HOME
       </router-link>
-      <router-link
-        class="nav__link"
-        active-class="active"
-        to="/projects">
-        PROJECTS
-      </router-link>
-      <router-link
-        class="nav__link"
-        active-class="active"
-        to="/writing">
-        WRITING
-      </router-link>
-      <router-link
-        class="nav__link"
-        active-class="active"
-        to="/rides">
-        RIDES
-      </router-link>
+      <!--
+        <router-link
+          class="nav__link"
+          active-class="active"
+          to="/projects">
+          PROJECTS
+        </router-link>
+        <router-link
+          class="nav__link"
+          active-class="active"
+          to="/writing">
+          WRITING
+        </router-link>
+        <router-link
+          class="nav__link"
+          active-class="active"
+          to="/rides">
+          RIDES
+        </router-link>
+      -->
     </nav>
   </header>
 </template>
