@@ -1,6 +1,9 @@
 {
   "name": "samuel-willis",
   "version": "1.0.0",
+  "engines": {
+    "node": "10.13.0"
+  },
   "description": "Personal site for Samuel Willis.",
   "main": "server.js",
   "scripts": {
