@@ -1,0 +1,29 @@
+// Body Styles
+$background-color: #fff;
+
+// Base unit
+$base-unit: rem(4px);
+$base-unit-2: $base-unit * 2;   // 8
+$base-unit-4: $base-unit * 4;   // 16
+$base-unit-6: $base-unit * 6;   // 24
+$base-unit-9: $base-unit * 9;   // 36
+$base-unit-12: $base-unit * 12; // 60
+$base-unit-15: $base-unit * 15; // 60
+$base-unit-20: $base-unit * 20; // 80
+
+// App Styles
+$app-max-width: rem(1120px);
+$app-padding-mobile: $base-unit-9;
+$app-padding-desktop: $base-unit-15;
+$app-padding-large: $base-unit-20;
+
+// Breakpoints
+$bp-xs: 320px;
+$bp-s: 720px;
+$bp-m: 860px;
+$bp-l: 1024px;
+$bp-xl: 1280px;
+
+// Font Styles
+$font-color: #272828;
+$font-size: rem(16px);

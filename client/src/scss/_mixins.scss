@@ -1,0 +1,39 @@
+@mixin layout($max-width: $app-max-width) {
+  max-width: $max-width;
+  padding-right: $app-padding-mobile;
+  padding-left: $app-padding-mobile;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include media($min: $bp-s) {
+    padding-right: $app-padding-desktop;
+    padding-left: $app-padding-desktop;
+  }
+
+  @include media($min: $bp-m) {
+    padding-right: $app-padding-large;
+    padding-left: $app-padding-large;
+  }
+}
+
+@mixin media($max: false, $min: false) {
+  @if $max {
+    @if $min {
+      @media screen and (max-width: $max - 1) and (min-width: $min) {
+        @content;
+      }
+    }
+
+ @else {
+      @media screen and (max-width: $max - 1) {
+        @content;
+      }
+    }
+  }
+
+ @else {
+    @media screen and (min-width: $min) {
+      @content;
+    }
+  }
+}

@@ -1,32 +1,56 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/projects">Projects</router-link> |
-      <router-link to="/writing">Writing</router-link> |
-      <router-link to="/rides">Rides</router-link> |
-    </div>
-    Yooo
-    <router-view/>
+
+    <nav-bar />
+    <main class="content">
+      <router-view />
+    </main>
   </div>
 </template>
 
+<script>
+import NavBar from '@/components/NavBar.vue';
+
+export default {
+  name: 'app',
+  components: {
+    NavBar,
+  },
+};
+</script>
+
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+body {
+  height: 100vh;
+  max-height: 100vh;
+  background-color: $background-color;
+  font-family: helvetica;
+  font-size: $font-size;
+  color: $font-color;
 }
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
+
+</style>
+
+<style lang="scss" scoped>
+
+  #app {
+    @include layout;
+
+    box-sizing: border-box;
+    height: 100%;
+    max-height: 100vh;
+    min-width: $bp-xs;
+    display: flex;
+    padding-top: $base-unit-15;
+    padding-bottom: $base-unit-4;
+
+    @include media($max: $bp-s) {
+      padding-top: $base-unit-6;
+      flex-direction: column;
     }
   }
-}
+
+  .content {
+    flex-grow: 2
+  }
 </style>
