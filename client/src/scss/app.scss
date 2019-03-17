@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed');
 
 @import './_reset';
-@import './_functions';
-@import './_variables';
-@import './_mixins';
+
+body {
+  height: 100vh;
+  max-height: 100vh;
+  background-color: $background-color;
+  font-family: 'Roboto Condensed';
+  font-size: $font-size;
+  color: $font-color;
+}
+
+h1, h2, h3, h4, h5, h6, a, button {
+  font-family: 'Oswald';
+}

@@ -14,6 +14,12 @@
         <router-link
           class="nav__link"
           active-class="active"
+          to="/about">
+          ABOUT
+        </router-link>
+        <router-link
+          class="nav__link"
+          active-class="active"
           to="/projects">
           PROJECTS
         </router-link>
@@ -39,7 +45,6 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: $base-unit-6;
-    font-family: 'Oswald';
     text-align: right;
 
     @include media($min: $bp-s) {
@@ -69,9 +74,16 @@
       .nav__link {
         line-height: 1.5;
         color: black;
+        text-transform: uppercase;
+        text-decoration: none;
 
         &.active {
-          text-decoration: none;
+          font-size: rem(20px);
+          transition: font-size 0.1s;
+        }
+
+        &:hover {
+          text-decoration: line-through;
         }
       }
     }

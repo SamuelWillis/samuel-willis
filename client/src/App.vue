@@ -19,18 +19,6 @@ export default {
 };
 </script>
 
-<style lang="scss">
-body {
-  height: 100vh;
-  max-height: 100vh;
-  background-color: $background-color;
-  font-family: helvetica;
-  font-size: $font-size;
-  color: $font-color;
-}
-
-</style>
-
 <style lang="scss" scoped>
 
   #app {

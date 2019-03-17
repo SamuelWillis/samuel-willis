@@ -16,10 +16,6 @@ export default {
 <style lang="scss" scoped>
 .home {
   display: flex;
-
-  @include media($max: $bp-s) {
-    justify-content: right;
-  }
 }
 
 .home__figure {
@@ -45,7 +41,6 @@ export default {
   align-self: flex-end;
   margin-top: $base-unit;
   margin-left: $base-unit;
-  font-family: 'Roboto Condensed';
   text-transform: uppercase;
 }
 </style>
