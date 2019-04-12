@@ -10,32 +10,6 @@
         exact>
         HOME
       </router-link>
-      <!--
-        <router-link
-          class="nav__link"
-          active-class="active"
-          to="/about">
-          ABOUT
-        </router-link>
-        <router-link
-          class="nav__link"
-          active-class="active"
-          to="/projects">
-          PROJECTS
-        </router-link>
-        <router-link
-          class="nav__link"
-          active-class="active"
-          to="/writing">
-          WRITING
-        </router-link>
-        <router-link
-          class="nav__link"
-          active-class="active"
-          to="/rides">
-          RIDES
-        </router-link>
-      -->
     </nav>
   </header>
 </template>
@@ -45,7 +19,6 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: $base-unit-6;
-    text-align: right;
 
     @include media($min: $bp-s) {
       margin-right: $base-unit-12;
@@ -58,8 +31,8 @@
     }
 
     .name {
+      padding: 0 $base-unit-2;
       font-size: rem(24px);
-      line-height: 1.5;
     }
 
     .nav {
@@ -72,18 +45,17 @@
 
 
       .nav__link {
-        line-height: 1.5;
+        padding: 0 $base-unit-2;
         color: black;
         text-transform: uppercase;
         text-decoration: none;
+        transition: font-size 0.1s;
 
-        &.active {
+        &.active,
+        &:hover,
+        &:focus {
+          text-decoration: underline;
           font-size: rem(20px);
-          transition: font-size 0.1s;
-        }
-
-        &:hover {
-          text-decoration: line-through;
         }
       }
     }

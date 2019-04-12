@@ -1,15 +1,42 @@
 <template>
   <div class="home">
-    <figure class="home__figure">
-      <img class="home__image" src="/img/rock.jpg" alt="Samuel Bouldering">
-      <figcaption class="home__caption">killarney lake, 2017</figcaption>
-    </figure>
+    <transition name="fade">
+      <figure
+        class="home__figure"
+        v-show="imageLoaded"
+      >
+        <img
+          class="home__image"
+          src="/img/rock.jpg"
+          alt="Samuel Bouldering"
+          @load="onLoad"
+          v-show="imageLoaded"
+        />
+
+        <figcaption
+          class="home__caption"
+          v-show="imageLoaded"
+        >
+          Killarney Lake, 2017
+        </figcaption>
+      </figure>
+    </transition>
   </div>
 </template>
 
 <script>
 export default {
   name: 'home',
+  data() {
+    return {
+      imageLoaded: false,
+    };
+  },
+  methods: {
+    onLoad() {
+      this.imageLoaded = true;
+    },
+  },
 };
 </script>
 
@@ -39,8 +66,15 @@ export default {
 
 .home__caption {
   align-self: flex-end;
-  margin-top: $base-unit;
-  margin-left: $base-unit;
+  margin-top: $base-unit-2;
+  margin-left: $base-unit-2;
   text-transform: uppercase;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
 }
 </style>
