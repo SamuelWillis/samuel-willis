@@ -8,7 +8,14 @@
         active-class="active"
         to="/"
         exact>
-        HOME
+        Home
+      </router-link>
+      <router-link
+        class="nav__link"
+        active-class="active"
+        to="/about"
+        exact>
+        About
       </router-link>
     </nav>
   </header>
@@ -46,15 +53,11 @@
 
       .nav__link {
         padding: 0 $base-unit-2;
-        color: black;
-        text-transform: uppercase;
-        text-decoration: none;
         transition: font-size 0.1s;
 
         &.active,
         &:hover,
         &:focus {
-          text-decoration: underline;
           font-size: rem(20px);
         }
       }
