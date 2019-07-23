@@ -26,4 +26,8 @@ a {
   &:focus {
     text-decoration: underline;
   }
+
+  &:focus {
+    outline: 2px dotted;
+  }
 }

@@ -13,6 +13,13 @@
       <router-link
         class="nav__link"
         active-class="active"
+        to="/projects"
+        exact>
+        Projects
+      </router-link>
+      <router-link
+        class="nav__link"
+        active-class="active"
         to="/about"
         exact>
         About
@@ -40,6 +47,7 @@
     .name {
       padding: 0 $base-unit-2;
       font-size: rem(24px);
+      white-space: nowrap;
     }
 
     .nav {
@@ -52,6 +60,7 @@
 
 
       .nav__link {
+        position: relative;
         padding: 0 $base-unit-2;
         transition: font-size 0.1s;
 
@@ -59,6 +68,11 @@
         &:hover,
         &:focus {
           font-size: rem(20px);
+        }
+
+
+        &:focus {
+          text-decoration: none;
         }
       }
     }

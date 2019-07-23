@@ -9,11 +9,11 @@
         Currently employed at
         <a
           class="about__employer-link"
-          href="https://www.pixelunion.net/"
+          href="https://www.benevity.com/"
           target="_blank"
-          title="Current Employer"
+          title="Current Employer - Benevity"
         >
-          Pixel Union.
+        Benevity.
         </a>
        </p>
     </div>

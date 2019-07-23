@@ -12,8 +12,8 @@
 </template>
 
 <script>
-import NavBar from '@/components/NavBar.vue';
-import SocialLinks from '@/components/SocialLinks.vue';
+import NavBar from '@/components/nav-bar/NavBar.vue';
+import SocialLinks from '@/components/social-links/SocialLinks.vue';
 
 export default {
   name: 'app',
