@@ -20,9 +20,9 @@
       <router-link
         class="nav__link"
         active-class="active"
-        to="/about"
+        to="/now"
         exact>
-        About
+        Now
       </router-link>
     </nav>
   </header>

@@ -2,12 +2,12 @@
   <div id="app">
 
     <nav-bar />
-      <div class="app__content">
-        <main class="app__main">
-          <router-view />
-        </main>
-        <social-links />
-      </div>
+    <div class="app__content">
+      <main class="app__main">
+        <router-view />
+      </main>
+      <social-links />
+    </div>
   </div>
 </template>
 
