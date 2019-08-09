@@ -1,7 +1,0 @@
-{
-  "name": "samuel willis nodemon",
-  "events": {
-    "start": "npm run lint",
-    "restart": "npm run lint"
-  }
-}

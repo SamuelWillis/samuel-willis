@@ -8,9 +8,11 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "lint": "./node_modules/.bin/eslint server.js",
-    "serve": "NODE_ENV=dev nodemon --watch client/ --exec heroku local",
-    "build:client": "rm -rf public/ client/dist/ && cd client && npm run build && cd .. && mv client/dist public",
+    "postinstall": "npm run build",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "test:unit": "vue-cli-service test:unit",
     "deploy": "git push heroku master"
   },
   "repository": {
@@ -24,12 +26,30 @@
   },
   "homepage": "https://github.com/SamuelWillis/samuel-willis#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "@fortawesome/fontawesome-pro": "^5.8.1",
+    "@fortawesome/fontawesome-svg-core": "^1.2.17",
+    "@fortawesome/free-brands-svg-icons": "^5.8.1",
+    "@fortawesome/pro-light-svg-icons": "^5.8.1",
+    "@fortawesome/vue-fontawesome": "^0.1.6",
+    "vue": "^2.5.22",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
-    "eslint": "^5.14.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.16.0",
-    "nodemon": "^1.18.10"
+    "@vue/cli-plugin-babel": "^3.4.0",
+    "@vue/cli-plugin-eslint": "^3.4.0",
+    "@vue/cli-plugin-unit-jest": "^3.9.0",
+    "@vue/cli-service": "^3.6.0",
+    "@vue/eslint-config-airbnb": "^4.0.0",
+    "@vue/test-utils": "^1.0.0-beta.20",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.8.0",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.5.21"
   }
 }

@@ -1,18 +1,28 @@
-# Samuel Willis Personal Site
+# Samuel Willis Personal Site Frontend.
 
-Personal site for myself.
+Frontend of the site.
 
-Wanted to use this as a learning tool for myself.
+## Project setup
+```
+npm install
+```
 
-Built with VueJS and ExpressJS.
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
-## Commands
+### Compiles and minifies for production
+```
+npm run build
+```
 
-### `npm start`
-Starts the server vanilla style.
+### Run your tests
+```
+npm run test:unit
+```
 
-### `npm run lint`
-Lint the server's js.
-
-### `npm run serve`
-Run the server with nodemon. Watches for changes in the server files. Lints on changes.
+### Lints and fixes files
+```
+npm run lint
+```
