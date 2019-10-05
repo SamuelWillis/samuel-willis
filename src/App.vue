@@ -50,7 +50,6 @@ export default {
   }
 
   .app__main {
-    overflow: scroll;
     @include media($min: $bp-s) {
       max-height: 100%;
     }
