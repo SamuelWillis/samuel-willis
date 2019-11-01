@@ -1,9 +1,11 @@
 <template>
   <div class="social">
     <p class="social__copy">
-       Copyright <font-awesome-icon
-       class="social__copy-icon"
-       :icon="faCopyright" /> Samuel Willis, {{ year }}
+       <font-awesome-icon
+         class="social__copy-icon"
+         :icon="faCopyright"
+        />
+        Samuel Willis, {{ year }}
     </p>
     <a
       class="social__link"
@@ -88,7 +90,7 @@ export default {
   display: flex;
   flex-grow: 1;
   align-items: center;
-  font-size: $font-size * 0.5;
+  font-size: $font-size * 0.75;
 }
 
 .social__copy-icon {

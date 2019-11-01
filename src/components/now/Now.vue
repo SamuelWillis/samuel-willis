@@ -1,12 +1,12 @@
 <template>
   <div id="now">
-    <h3 class="now__title">{{ title }}</h3>
+    <h3 class="now__title" v-html="title"></h3>
     <p
       class="now__line"
        v-for="(line, index) in description_lines"
        :key="index"
+       v-html="line"
     >
-      {{ line }}
     </p>
   </div>
 </template>
