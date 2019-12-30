@@ -1,20 +1,30 @@
-const CYCLING_NOW = {
-  title: 'Cycling',
+const LANGUAGE_NOW = {
+  title: 'Languages',
   description_lines: [
-    'With the start of the new year, I wanted to refocus on cycling and ticking off some of my bigger goals.',
-    'These include:',
-    '    - 4500km total for the year',
-    '    - 40,000m climbing for the year.',
-    '    - 160km (100 mile) ride.',
+    'I have finally gotten tired of talking about how I wished I spoke Spanish more and decided to sign up for Duolingo to serve as an impetus.',
+    'Signing up made me think, why limit myself to Spanish and so I decided to learn French as well.',
   ],
 };
 
-const INTENTION_NOW = {
-  title: 'Intention',
+const BIKEPACKING_NOW = {
+  title: 'Bikepacking',
   description_lines: [
-    'Drawing inspiration from Mark Twight, Michael Blevin, and the existential crisis brought about by another day frivolously spent, I have turned myself towards changing my daily habits and routines.',
-    'These daily habits are aimed at a higher focus on fitness, exploration, and time spent creating rather than consuming.',
-    'It\'s a slow process but the end of day anxiety is waning.',
+    'A long time goal of mine has been to cycle from my front door in Victoria to my parents front door in Fernie.',
+    'Thankfully, there is a beautiful 1000 mile trail from Merritt to Fernie known as the <a href="https://www.bcepic1000.com/route-map" target="_blank">BC Epic</a>. Leaving the only difficult to route section between Vancouver and Merrit.',
+    'This route should take me roughly 10 days at a not quite leisurely, not quite kill myself pace and will be extremely rewarding to knock down',
+  ],
+};
+
+const CYCLING_NOW = {
+  title: 'Cycling',
+  description_lines: [
+    'A big constant in my life. I lay down some great consistency, as well as broke some personal milestones, in 2019.',
+    'I hope to build of that foundation and move the needle even further.',
+    'Some thoughts include:',
+    '    - Continued 7hrs/week average',
+    '    - 100,000m climbing for the year.',
+    '    - 160km Gravel route',
+    '    - 250km in a single ride',
   ],
 };
 
@@ -28,9 +38,10 @@ const OTB_NOW = {
 };
 
 const NOWS = [
-  INTENTION_NOW,
-  OTB_NOW,
+  LANGUAGE_NOW,
+  BIKEPACKING_NOW,
   CYCLING_NOW,
+  OTB_NOW,
 ];
 
 export default NOWS;
