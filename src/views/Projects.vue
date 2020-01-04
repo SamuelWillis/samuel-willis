@@ -26,12 +26,6 @@ export default {
           description: 'A small website for myself.',
         },
         {
-          title: 'Algorithms and Data Structures',
-          kind: 'github',
-          link: 'https://github.com/SamuelWillis/algorithms-and-data-structures',
-          description: 'A way to relearn the things I shouldn\'t have forgotten to begin with.',
-        },
-        {
           title: 'OTB',
           kind: 'misc',
           link: 'https://www.offtheback.cc',
