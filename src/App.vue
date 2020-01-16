@@ -48,10 +48,4 @@ export default {
     flex-grow: 2;
     justify-content: space-between;
   }
-
-  .app__main {
-    @include media($min: $bp-s) {
-      max-height: 100%;
-    }
-  }
 </style>
